@@ -8,8 +8,8 @@ const data = [
   },
   {
     id: 2,
-    text: "about",
-    url: "/about/",
+    text: "skills",
+    url: "/skills/",
   },
   {
     id: 3,
@@ -21,21 +21,28 @@ const data = [
     text: "blog",
     url: "/blog/",
   },
+  
   {
     id: 5,
     text: "contact",
     url: "/contact/",
+  },
+  {
+    id: 6,
+    text: "resume",
+    url: "https://drive.google.com/open?id=1lEKc9jRFYj3QrZIMBYcsb5-DuEce7cpH",
   },
 ]
 
 const tempLinks = data.map(link => {
   return (
     <li key={link.id}>
-      <Link to={link.url}>{link.text}</Link>
+      {link.text !== "resume" && <Link to={link.url}>{link.text}</Link>}
+      {link.text === "resume" && <a href={link.url}>{link.text}</a>}
+      
     </li>
   )
 })
-// I KNOW WE CAN COMBINE IT !!!!!
 
 export default ({ styleClass }) => {
   return (

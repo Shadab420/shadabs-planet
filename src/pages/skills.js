@@ -1,16 +1,17 @@
 import React from "react"
 import Layout from "../components/Layout"
+import Services from "../components/Services"
 import { graphql } from "gatsby"
 import Title from "../components/Title"
 import Image from "gatsby-image"
 // ...GatsbyImageSharpFluid
-const About = () => {
+const Skills = () => {
   return (
     <Layout>
-      <h2>about page</h2>
+      <Services/>
     </Layout>
     
   )
 }
 
-export default About
+export default Skills

@@ -7,7 +7,7 @@ import Blogs from "../components/Blogs"
 const Blog = () => {
   return (
     <Layout>
-      <h2>Blog page</h2>
+      <Blogs/>
     </Layout>
     
   )
