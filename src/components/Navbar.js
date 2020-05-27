@@ -18,13 +18,13 @@ function scrollFunction() {
   }
 }
 
-const Navbar = () => {
+const Navbar = ({toggleSidebar}) => {
   return (
     <nav className="navbar" id = "navbar">
       <div className="nav-center">
         <div className="nav-header">
           <img src={logo} alt="logo" className="logo"/>
-          <button type="button" className="toggle-btn">
+          <button type="button" className="toggle-btn" onClick={toggleSidebar}>
               <FaAlignRight/>
           </button>
         </div>
