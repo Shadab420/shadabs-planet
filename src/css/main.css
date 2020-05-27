@@ -441,6 +441,12 @@ Hero
 .hero-info {
   background: var(--clr-primary-10);
 }
+
+.hero-info article {
+  font-size: 1.2rem;
+  width: 100%;
+}
+
 .hero-img {
   display: block;
 }
@@ -476,6 +482,9 @@ Hero
     grid-row: 1/1;
     grid-column: 1 / span 8;
   }
+  .hero-info article {
+    width: 35rem;
+  }
   .hero-img {
     grid-row: 1/1;
     grid-column: 6/-1;
@@ -507,6 +516,7 @@ Services
   margin-bottom: 2rem;
   border-radius: var(--radius);
   text-align: center;
+  box-shadow: 0px 0px 5px 0px grey;
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
