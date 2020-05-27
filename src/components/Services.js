@@ -4,18 +4,22 @@ import services from "../constants/services"
 const Services = () => {
   return (
     <section className="section bg-grey">
-      <Title title="Services"/>
+      <Title title="Skills"/>
       <div className="section-center services-center">
         {
           services.map(service => {
-            const { id, icon, title, text } = service;
+            const { id, title, stacks } = service;
 
             return (
               <article key={id} className="service"> 
-                {icon}
-                <h4>{title}</h4>
-                <div className="underline"></div>
-                <p>{text}</p>
+                <h3>{title}</h3>
+                <div className="project-stack">
+                  {
+                    stacks.map((stack, index) => {
+                      return <span key={index}>{stack}</span>
+                    })
+                  }
+                </div>
               </article>
             )
           })
