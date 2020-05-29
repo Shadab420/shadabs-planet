@@ -450,6 +450,7 @@ Hero
 .hero-img {
   display: block;
 }
+
 .hero-info h4 {
   color: var(--clr-grey-5);
 }
@@ -458,6 +459,13 @@ Hero
 }
 .hero .btn {
   margin-top: 1.25rem;
+}
+
+@media screen and (min-width: 359){
+  .hero-img{
+    grid-row: 1/1;
+    grid-column: 6/-4;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -487,7 +495,7 @@ Hero
   }
   .hero-img {
     grid-row: 1/1;
-    grid-column: 6/-1;
+    grid-column: 6/-2;
   }
 }
 @media screen and (min-width: 1170px) {
@@ -860,7 +868,13 @@ Footer
   text-align: center;
   display: grid;
   place-items: center;
+  color: var(--clr-white);
 }
+
+.footer h5{
+  font-size: 1.2rem;
+}
+
 .footer h4 {
   margin-top: 0.5rem;
   color: var(--clr-white);

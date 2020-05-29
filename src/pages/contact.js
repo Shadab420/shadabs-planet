@@ -9,9 +9,9 @@ const contact = () => {
           <h3>Get in touch</h3>
           <form method="post" data-netlify="true">
             <div className="form-group">
-              <input type="text" placeholder="name" className="form-control"/>
-              <input type="email" placeholder="email" className="form-control"/>
-              <textarea name="message" rows="5" placeholder="message" className="form-control"></textarea>
+              <input type="text" placeholder="name" className="form-control" required/>
+              <input type="email" placeholder="email" className="form-control" required/>
+              <textarea name="message" rows="5" placeholder="message" className="form-control" required></textarea>
             </div>
             <button type="submit" className="btn submit-btn">Submit</button>
           </form>

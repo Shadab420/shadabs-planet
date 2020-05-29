@@ -5,6 +5,10 @@ import PageLinks from "../constants/links"
 
 
 //navbar background change on scroll.
+if (typeof window === 'undefined') {
+  global.window = {}
+}
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
